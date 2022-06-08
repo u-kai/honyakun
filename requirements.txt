@@ -1,4 +1,3 @@
-requests
 webdriver_manager
-bs4
 selenium
+openpyxl

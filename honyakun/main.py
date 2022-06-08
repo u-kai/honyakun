@@ -1,7 +1,10 @@
-from honyakun.g_translater import GTranslater
+from honyakun.excels.translater import ExcelTranslater
 from honyakun.langs import Langs
 
 
-g = GTranslater(Langs("en"), Langs("cn"))
-result = g.translate("hello")
-print(result)
+e = ExcelTranslater("test.xlsx", "term1", Langs("jp"), Langs("en"))
+
+e.translate_column("E", "F", 4, 5)
+e.change_lang(Langs("en"), Langs("cn"))
+e.translate_column("F", "G", 4, 5)
+e.check("H", 4, 20)

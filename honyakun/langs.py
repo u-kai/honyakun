@@ -22,4 +22,4 @@ class Langs():
     def lang(self) -> str:
         if self.is_ja() or self.is_cn() or self.is_en():
             return self.value
-        raise RuntimeError
+        print(f"not lang {self.value}")
