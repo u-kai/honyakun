@@ -1,13 +1,12 @@
-"""_summary_
-
-    lang is follow below
-        ja
-        en
-        cn
-"""
-
-
 class Langs():
+    """_summary_
+
+        Langs is follow below
+            - ja
+            - en
+            - cn
+    """
+
     def __init__(self, lang: str) -> None:
         self.value = lang
 
